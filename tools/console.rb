@@ -6,22 +6,19 @@ require_relative '../config/environment'
 cap_one = Bank.new("Capital One", "Denver")
 first = Bank.new("First Bank", "Denver")
 chase = Bank.new("Chase", "Denver")
+usaa = Bank.new("USAA", "Houston")
 
 john = Customer.new("John Smith", 35)
-bob = Customer.new("Bob Jones", 73)
-desirae = Customer.new("Desirae Sun", 21)
+steph = Customer.new("Steph", 25)
+corey = Customer.new("Corey", 31)
+doug = Customer.new("Doug", 35)
 
-ba1 = Account.new("2934875328975", 45.34, cap_one, john)
-ba2 = Account.new("234", 1010, first, john, 2009)
-
-ba3 = Account.new("786", 72733, chase, bob, 1987)
-ba4 = Account.new("5464", 843843.99, chase, bob, 1950)
-
-ba5 = Account.new("25423", 4.56, first, desirae, 2018)
-ba6 = Account.new("76876", 833, cap_one, desirae, 2011)
-ba7 = Account.new("2456546", 5.45, chase, desirae)
-
-
+john_account1 = Account.new("2934875328975", 2009, cap_one, john)
+john_account2 = Account.new("234", 2013, first, john)
+corey_account1 = Account.new("1337", 2020, usaa, corey)
+corey_account2 = Account.new("12345", 2020, cap_one, corey)
+doug_account1 = Account.new("29930485", 2016, chase, doug)
+doug_account2 = Account.new("221213124", 2001, cap_one, doug)
 
 binding.pry
 0
